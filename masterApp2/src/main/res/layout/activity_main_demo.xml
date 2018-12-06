@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityMasterApp2"
+    android:background="#ffffff">
+    
+<RelativeLayout
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/daohang_bg">
+    
+    <TextView
+    android:id="@+id/title_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text=""
+    android:textColor="@color/white"
+    android:textSize="28dp"
+    android:paddingLeft="10dp"
+    android:gravity="left|center"/>
+    
+    <ImageView
+    android:onClick="setting"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/shezhi_ico"
+    android:layout_alignParentRight="true"/>
+    
+</RelativeLayout>
+
+<android.support.v4.view.ViewPager
+    android:id="@+id/view_pager"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_above="@id/bottom_view"
+    android:layout_below="@id/constraintLayout"/>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/err_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_above="@id/bottom_view"
+        android:layout_below="@id/constraintLayout">
+
+        <ImageView
+            android:id="@+id/err_image"
+            android:layout_width="500dp"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/fetch_data"/>
+
+        <Button
+            android:id="@+id/retry_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重新加载"
+            android:textSize="24dp"
+            android:textColor="#000000"
+            android:background="@drawable/fetch_data_btn"
+            android:layout_below="@id/err_image"
+            android:layout_centerInParent="true"
+            android:onClick="retryQuest"/>
+
+    </RelativeLayout>
+
+
+
+<LinearLayout
+    android:id="@+id/bottom_view"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

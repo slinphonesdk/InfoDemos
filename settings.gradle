@@ -1,0 +1,14 @@
+include ':bedHeaderApp', ':linphonedemo',
+        ':doorSideApps',
+//        ':treatAndNurseApps',
+        ':common',
+        ':JavaTest',
+        ':usipserver',
+        ':rudp',
+        ':rudptest',
+        ':rextension',
+        ':rextensiontest',
+        ':master2',
+        ':masterApp2', ':linphone'
+project(':doorSideApps').projectDir = new File('doorSideApp')
+//project(':treatAndNurseApps').projectDir = new File('treatAndNurseApp')

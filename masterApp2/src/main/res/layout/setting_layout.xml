@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="600dp"
+    android:background="#eaf1fe"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/daohang_bg"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="设置" />
+
+    <Button
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/setting_ward_button"
+        android:background="@drawable/daohang_bg"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:text="设置病区"/>
+
+    <Button
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/setting_server_button"
+        android:background="@drawable/daohang_bg"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:text="配置服务器"/>
+
+
+    <Switch
+        android:id="@+id/debug_mode_switch"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@drawable/daohang_bg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="DebugMode"
+        android:textOn="on"
+        android:textOff="off"/>
+
+    <Button
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/cancel_button"
+        android:background="#dddddd"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:text="取消"/>
+
+
+</LinearLayout>

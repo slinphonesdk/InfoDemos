@@ -1,0 +1,32 @@
+syntax="proto3";
+
+package com.bean;
+
+option java_package = "src";
+option java_outer_classname = "CMC";
+
+
+message CMCRequestParam {
+
+    message Header {
+
+        int32 command = 1;
+        string sip = 2;
+        string uuid = 3;
+        int32 type = 4;
+    }
+
+    message Body {
+
+        string sessionID = 5;
+        repeated string lists = 10;
+    }
+
+    Header header = 8;
+    Body body = 9;
+
+}
+
+
+
+

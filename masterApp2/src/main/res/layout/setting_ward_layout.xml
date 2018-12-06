@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="400dp"
+    android:background="#eaf1fe"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/daohang_bg"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="设置病区" />
+
+    <EditText
+        android:id="@+id/ward_id_et"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="28dp"
+        android:background="#d8e7ff"
+        android:textColor="#80848a"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:hint="请输入病区ID"
+        android:paddingLeft="10dp"
+        android:maxLength="2"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            android:text="取消"
+            android:textSize="24dp"
+            android:textColor="#f6f7f7"
+            android:background="#cbcccd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:id="@+id/sure"
+            android:text="确定"
+            android:textSize="24dp"
+            android:textColor="#e8efff"
+            android:background="#4082fa"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
